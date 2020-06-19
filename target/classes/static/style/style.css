@@ -1,0 +1,642 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #000000;
+    line-height: 1.6;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h6 {
+    color: white;
+}
+
+hr {
+    display: block;
+    width: 160px;
+    height: 1px;
+    border: 0;
+    margin: 1px 0;
+    background-color: #BDBDBD;
+}
+
+/*discount*/
+
+.discount-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.discount {
+    width: 100%;
+    height: 15vh;
+    max-height: 50px;
+    background-image: url('/img/head.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.marquee {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.discount_text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+}
+
+/*logout button*/
+.log-out {
+    background-color: cornflowerblue;
+    border: 3px solid cornflowerblue;
+    box-shadow: 0 0 7px #666;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 120px;
+    height: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    transition: 0.5s;
+    margin-right: 40px;
+    margin-top: 5px;
+}
+
+.log-out:hover {
+     background-color: red;
+ }
+
+/*main*/
+
+
+
+.main{
+    width: 100%;
+    height: 1000px;
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    background-image: url('/img/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.dws-menu *{
+    margin: 0;
+    padding: 0;
+}
+.dws-menu ul,
+.dws-menu ol{
+    list-style: none;
+}
+.dws-menu > ul{
+    display: flex;
+    justify-content: center;
+}
+.dws-menu > ul li{
+    position: relative;
+    border-right: 1px solid #c7c8ca;
+}
+.dws-menu > ul li:first-child{
+    border-left: 1px solid #b2b3b5;
+}
+.dws-menu > ul li:last-child{
+    border-right: 1px solid #babbbd;
+}
+.dws-menu > ul li > a i.fa{
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    font-size: 18px;
+}
+.dws-menu > ul li a{
+    display: block;
+    background: rgb(201,201,201);
+    background: -moz-linear-gradient(top,  rgba(201,201,201,1) 0%, rgba(246,246,246,1) 2%, rgba(196,197,199,1) 98%, rgba(117,117,119,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(201,201,201,1) 0%,rgba(246,246,246,1) 2%,rgba(196,197,199,1) 98%,rgba(117,117,119,1) 100%);
+    background: linear-gradient(to bottom,  rgba(201,201,201,1) 0%,rgba(246,246,246,1) 2%,rgba(196,197,199,1) 98%,rgba(117,117,119,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9c9c9', endColorstr='#757577',GradientType=0 );
+
+    padding: 15px 30px 15px 40px;
+    font-size: 14px;
+    color: #454547;
+    text-decoration: none;
+    text-transform:uppercase;
+    transition: all 0.3s ease;
+}
+.dws-menu li a:hover{
+    background: rgb(224,225,229);
+    background: -moz-linear-gradient(top,  rgba(224,225,229,1) 0%, rgba(69,69,71,1) 2%, rgba(69,69,71,1) 98%, rgba(224,225,229,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(224,225,229,1) 0%,rgba(69,69,71,1) 2%,rgba(69,69,71,1) 98%,rgba(224,225,229,1) 100%);
+    background: linear-gradient(to bottom,  rgba(224,225,229,1) 0%,rgba(69,69,71,1) 2%,rgba(69,69,71,1) 98%,rgba(224,225,229,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e1e5', endColorstr='#e0e1e5',GradientType=0 );
+
+    color: #ffffff;
+    box-shadow: 1px 5px 10px -5px black;
+    transition: all 0.3s ease;
+}
+
+.dws-menu li ul{
+    position: absolute;
+    min-width: 150px;
+    display: none;
+}
+.dws-menu li > ul li{
+    border: 1px solid #c7c8ca;
+}
+.dws-menu li > ul li a{
+    padding: 10px;
+    text-transform: none;
+    background: #e4e4e5;
+}
+.dws-menu li > ul li ul{
+    position: absolute;
+    right: -150px;
+    top: 0;
+}
+.dws-menu li:hover > ul{
+    display: block;
+}
+
+
+
+/*footer*/
+.footer {
+    padding: 80px 0;
+    width: 100%;
+    background-image: url('/img/head.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer_container {
+    display: flex;
+    margin-left:100px;
+}
+
+.footer__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+}
+
+.footer_bullets_item {
+    display: flex;
+    padding-left: 85px;
+    padding-right: 35px;
+    position: relative;
+}
+
+.bullets_phone {
+    margin-left: 20px;
+}
+
+/*error*/
+
+.error-background {
+    width: 100%;
+    height: 1000px;
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+    background-image: url('/img/error-background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.error-text {
+    margin-left: 550px;
+    margin-top: 50px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+    font-family: 'Kaushan script', cursive;
+    display: flex;
+}
+
+.error-text-2 {
+    margin-left: 170px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+    font-family: 'Kaushan script', cursive;
+    display: flex;
+}
+
+.go-back {
+    background-color: cornflowerblue;
+    border: 3px solid cornflowerblue;
+    box-shadow: 0 0 7px #666;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 120px;
+    height: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    transition: 0.5s;
+    margin-left: 700px;
+    margin-top: 5px;
+}
+
+.go-back:hover {
+    background-color: red;
+}
+
+/*about*/
+
+.home {
+    padding: 80px 0;
+    width: 100%;
+    background-image: url(img/about-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.home_header {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 50px;
+    text-align: center;
+
+}
+
+
+.home_header_hello {
+    font-family: 'Kaushan script', cursive;
+    font-size: 72px;
+    color: #000;
+}
+
+.home_header_dop {
+    font-size: 32px;
+    font-family: 'Kaushan script', cursive;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    padding: 15px;
+
+}
+
+.home_header_dop:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 40px auto 0;
+
+    background-color: #f38181;
+}
+
+
+.home_photos {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+
+}
+
+.home_photos_item  {
+    margin-right: 50px;
+    width: 380px;
+    position: relative;
+
+    background-color: #95e1d3;
+}
+
+.home_photos_item:hover .home_photos_images {
+    transform: translate(-10px, -10px);
+}
+
+.home_photos_item:hover .home_photos_images img {
+    opacity: .1;
+}
+
+.home_photos_item:hover .home_photos_text {
+    opacity: 1;
+
+}
+
+
+.home_photos_images {
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+    transition: transform .2s linear;
+}
+
+.home_photos_images img {
+    display: block;
+    transition: opacity .1s linear;
+
+}
+
+.home_photos_text {
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0);
+    opacity: 0;
+    transition: opacity .1s linear;
+}
+
+/*news*/
+
+.news {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 130px;
+}
+
+.news-content {
+    width: 285px;
+    height: 350px;
+}
+
+.news-text {
+    font-family: 'Kaushan script', cursive;
+    font-size: 72px;
+    color: #000;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.news-silka {
+    font-size: 14px;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.news-silka:hover {
+    color: #1B41C8;
+}
+
+/*patient Add/Edit*/
+.patientAdd {
+    margin-top: 150px;
+    height: 170px;
+    width: 100%;
+    margin-left: 650px;
+}
+
+.addFormBody {
+    width: 800px;
+    background-image: url("/img/addForm3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*archive Add/Edit*/
+
+.archiveAdd {
+    margin-top: 150px;
+    height: 170px;
+    width: 100%;
+    margin-left: 650px;
+}
+
+.AddText {
+    font-size: 32px;
+    font-family: 'Kaushan script', cursive;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.AddText2 {
+    font-size: 32px;
+    font-family: 'Kaushan script', cursive;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    margin-left: 650px;
+
+}
+
+.SearchText {
+    font-size: 14px;
+    font-family: 'Kaushan script', cursive;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+}
+
+/*disease Add/Edit*/
+.diseaseAdd {
+    margin-top: 150px;
+    height: 170px;
+    width: 100%;
+    margin-left: 650px;
+}
+
+/*doctor Add/Edit*/
+
+.doctorAdd {
+    margin-top: 150px;
+    height: 170px;
+    width: 100%;
+    margin-left: 650px;
+}
+
+/*history of disease Add/Edit*/
+
+.historyOfDiseaseAdd {
+    margin-top: 150px;
+    height: 170px;
+    width: 100%;
+    margin-left: 650px;
+}
+
+/*manufacter Add/Edit*/
+
+.manufacterAdd {
+    margin-top: 150px;
+    height: 170px;
+    width: 100%;
+    margin-left: 650px;
+}
+
+/*materials Add/Edit*/
+
+.materialsAdd {
+    margin-top: 150px;
+    height: 170px;
+    width: 100%;
+    margin-left: 650px;
+}
+
+/*medicine Add/Edit*/
+
+.medicineAdd {
+    margin-top: 150px;
+    height: 170px;
+    width: 100%;
+    margin-left: 650px;
+}
+
+/*spending Card Add/Edit*/
+
+.patientSpendingCardAdd {
+    margin-top: 150px;
+    height: 170px;
+    width: 100%;
+    margin-left: 650px;
+}
+
+/*receipts Of Doctor Add/Edit*/
+ .receiptsOfDoctorAdd {
+     margin-top: 150px;
+     height: 170px;
+     width: 100%;
+     margin-left: 650px;
+ }
+
+/*receipts Of Policlinic Add/Edit*/
+
+.receiptsOfPolicliclinicAddd {
+    margin-top: 150px;
+    height: 170px;
+    width: 100%;
+    margin-left: 650px;
+}
+
+/*visit Add/Edit*/
+.visitAdd {
+    margin-top: 100px;
+    height: 170px;
+    width: 100%;
+    margin-left: 650px;
+}
+
+/*visitOf Clinic Add/Edit*/
+
+.visitOfClinicAdd {
+    margin-top: 150px;
+    height: 170px;
+    width: 100%;
+    margin-left: 650px;
+}
+
+/*table*/
+
+
+.Table-text {
+    font-size: 32px;
+    font-family: 'Kaushan script', cursive;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    margin-left: 650px;
+}
+
+.buttonDelEd {
+    background-color: cornflowerblue;
+    border: 3px solid cornflowerblue;
+    box-shadow: 0 0 7px #666;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 70px;
+    height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    transition: 0.5s;
+    margin-right: 40px;
+}
+
+.buttonDelEd:hover{
+    background-color: aqua;
+}
+
+.AddButtn {
+    background-color: cornflowerblue;
+    border: 3px solid cornflowerblue;
+    box-shadow: 0 0 7px #666;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 120px;
+    height: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    transition: 0.5s;
+    margin-left: 1400px;
+    margin-bottom: 10px;
+}
+.AddButtn:hover{
+    background-color: aqua;
+}
+
+.sortButtn {
+    background-color: cornflowerblue;
+    border: 3px solid cornflowerblue;
+    box-shadow: 0 0 7px #666;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 60px;
+    height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+.sortButtn:hover{
+    background-color: aqua;
+}
+
+.UndoSortButtn {
+    background-color: cornflowerblue;
+    border: 3px solid cornflowerblue;
+    box-shadow: 0 0 7px #666;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100px;
+    height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+.UndoSortButtn:hover{
+    background-color: aqua;
+}
+
+.undoText{
+    font-size: 13px;
+}
+
+.audio {
+    margin-top: 30px;
+    margin-left: 1200px;
+}

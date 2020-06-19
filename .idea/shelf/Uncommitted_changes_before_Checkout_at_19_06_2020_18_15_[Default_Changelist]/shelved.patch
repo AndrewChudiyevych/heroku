@@ -1,0 +1,12 @@
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># heroku\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- README.md	(revision c9a94186e2263848307ad73678a941e2ac25bcc3)
++++ README.md	(date 1592579527891)
+@@ -1,1 +1,2 @@
+ # heroku
++# heroku
